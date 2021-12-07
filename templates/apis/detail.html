@@ -1,0 +1,37 @@
+{% extends "shared/base.html" %} 
+
+{% block title %} 
+  <title>Api Detail</title>
+{% endblock %} 
+
+{% block content %} 
+<div class="container">
+      <h1 class="display-4 text-danger">Api Detail</h1>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th scope="row">Job Name</th>
+            <td>{{api.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Provider</th>
+            <td>{{api.provider}}</td>
+          </tr>
+          <tr>
+            <th scope="row">API URL</th>
+            <td>{{api.url}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Description</th>
+            <td>{{api.description}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Location</th>
+            <td>{{api.category}}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+</div>
+
+{% endblock %}
